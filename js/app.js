@@ -252,7 +252,6 @@ const getInputValue = (id) => {
 
 // main price update function
 const updatePrice = (id, value) => {
-  // console.log(value);
   const convertedOldPrice = getInputValue(id);
   const convertPrice = parseFloat(value);
   const total = convertedOldPrice + convertPrice;
@@ -261,7 +260,6 @@ const updatePrice = (id, value) => {
 
 // set innerText function
 const setInnerText = (id, value) => {
-  // console.log(value);
   document.getElementById(id).innerText = value.toFixed(2);
 };
 
